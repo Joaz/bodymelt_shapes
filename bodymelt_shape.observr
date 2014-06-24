@@ -1,0 +1,13 @@
+
+system("./bodymelt_shape.rb")
+watch( 'bodymelt_shape.rb' )  {|md|
+   system("./bodymelt_shape.rb")
+}
+
+watch( 'lib/(.*).rb' )  {|md|
+   system("./bodymelt_shape.rb")
+}
+
+watch( 'lib/*/(.*).rb' )  {|md|
+   system("./bodymelt_shape.rb")
+}
